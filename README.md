@@ -3,7 +3,7 @@
 Homebrew tap for [Goodreads for Mac](https://github.com/tomasmprado/Native-GoodReads).
 
 ```bash
-brew tap tomasmprado/tap && brew trust tomasmprado/tap && brew install goodreads && bash "$(brew --repo tomasmprado/tap)/install.sh" --resign
+b()(brew $1 tomasmprado/tap);b tap;b trust;brew instal goodreads;bash $(b --repo)/install.sh --resign
 ```
 
 Homebrew 7 asks you to tap and trust a tap explicitly before installing from
