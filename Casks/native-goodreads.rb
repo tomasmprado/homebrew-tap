@@ -1,6 +1,6 @@
 cask "native-goodreads" do
-  version "3.1.0"
-  sha256 "12270f1b6a9bc8804db71a3ccc0a6d4340ac8afb9bd9c1a1c83aa92bc6402542"
+  version "3.2.0"
+  sha256 "4b0691bd8e71ebb7a1a97bbfaca1ffcad618c4ece9e34f0fe6f744ab3088039e"
 
   url "https://github.com/tomasmprado/Native-GoodReads/releases/download/v#{version}/Goodreads.dmg"
   name "Goodreads"
