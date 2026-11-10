@@ -43,7 +43,7 @@ cask "goodreads" do
     So the Keychain stops asking for your password after every update, sign
     the app once with a certificate made on this Mac (kept in your login
     keychain, used for nothing else):
-      bash "$(brew --repository tomasmprado/tap)/install.sh" --resign
+      bash "$(brew --repo tomasmprado/tap)/install.sh" --resign
 
     The first time it opens, choose Always Allow if macOS asks for your
     login password so the app can use the Keychain.
