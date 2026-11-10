@@ -1,4 +1,4 @@
-cask "native-goodreads" do
+cask "goodreads" do
   version "3.2.0"
   sha256 "4b0691bd8e71ebb7a1a97bbfaca1ffcad618c4ece9e34f0fe6f744ab3088039e"
 
