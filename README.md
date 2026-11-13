@@ -1,9 +1,9 @@
 # tomasmprado/tap
 
-Homebrew tap for [Goodreads for Mac](https://github.com/tomasmprado/Native-GoodReads).
+Homebrew tap for [OpenShelf](https://github.com/tomasmprado/OpenShelf), a Mac app for your Goodreads library.
 
 ```bash
-b()(brew $1 tomasmprado/tap);b tap;b trust;brew instal goodreads;bash $(b --repo)/install.sh --resign
+b()(brew $1 tomasmprado/tap);b tap;b trust;brew instal openshelf;bash $(b --repo)/install.sh --resign
 ```
 
 Homebrew 7 asks you to tap and trust a tap explicitly before installing from
@@ -14,4 +14,4 @@ keychain, used for nothing else), so the Keychain stops asking for your
 password after every update.
 
 The app updates itself; `brew upgrade --greedy` works too. `brew uninstall
---zap goodreads` also removes its data and settings.
+--zap openshelf` also removes its data and settings.

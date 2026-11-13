@@ -1,11 +1,11 @@
-cask "goodreads" do
-  version "3.2.0"
-  sha256 "4b0691bd8e71ebb7a1a97bbfaca1ffcad618c4ece9e34f0fe6f744ab3088039e"
+cask "openshelf" do
+  version "3.3.0"
+  sha256 "44f1cce06537c517dcc7ac439d41ff92fa24bbd80a0c7be6bc6df601411cedd0"
 
-  url "https://github.com/tomasmprado/Native-GoodReads/releases/download/v#{version}/Goodreads.dmg"
-  name "Goodreads"
+  url "https://github.com/tomasmprado/OpenShelf/releases/download/v#{version}/OpenShelf.dmg"
+  name "OpenShelf"
   desc "Native app for your Goodreads shelves, suggestions and reading stats"
-  homepage "https://github.com/tomasmprado/Native-GoodReads"
+  homepage "https://tomasmprado.github.io/OpenShelf/"
 
   livecheck do
     url :url
@@ -16,14 +16,14 @@ cask "goodreads" do
   auto_updates true
   depends_on macos: :ventura
 
-  app "Goodreads.app"
+  app "OpenShelf.app"
 
   # The app isn't notarised by Apple, so the "downloaded from the internet"
   # flag comes off, as install.sh does, or macOS won't open it.
   postflight_steps do
     run "/usr/bin/xattr",
-        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Goodreads.app"],
-        writable_paths: ["{{appdir}}/Goodreads.app"]
+        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/OpenShelf.app"],
+        writable_paths: ["{{appdir}}/OpenShelf.app"]
   end
 
   uninstall quit: "local.goodreads.gui"
